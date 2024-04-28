@@ -1,0 +1,125 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:roboto;
+    line-height: 1.5em;
+  }
+  
+  #site_wrap{
+    background-color:white;
+    height:100vh;
+    display:grid;
+    grid-template-columns:
+      1fr 
+      repeat(4,minmax(0,268px))
+      1fr
+      ;
+    grid-gap:0px;
+    grid-template-rows:
+      83px
+      83px
+      324px
+      83px
+      90px
+      90px;
+    grid-template-areas:
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      "hero hero hero hero hero hero "
+      "section section section section section section"
+      ". info1 info1 info1 info1 ."
+      ".  info2 info2 info2 info2 ."
+      
+      
+  }
+  
+  .header{
+    background-color:#F3EBE5;
+    grid-area:header;
+    align-items:center;
+    display:flex;
+    padding-left: 145px;
+    font-size: 27px;
+    font-weight: bold;
+    
+  }
+  .nav {
+    background-color: white;
+    grid-area: nav;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    list-style:none;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size:16px;
+    padding: 110px;
+  }
+  
+  .search-bar {
+    padding: 0;
+    margin-left: 200px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 358px;
+    height:20px;
+    padding: 5px;
+    border-radius: 12px; 
+  }
+  
+  .hero{
+    background-image:url(https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1883&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    grid-area:hero;
+    background-position: center 60%;
+    background-size:cover;
+  }
+  
+  .hbox {
+    float:left;
+    margin:184px -6px;
+    height: 100px;
+    width: 334px; 
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0px;
+    text-align: center;
+    opacity: .8;
+  }
+  .hbox-header {
+    font-weight: bold;
+    color: #8D2143;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .hbox-content {
+    padding:15px;
+  }
+  
+  .section{
+    background-color:white;
+    grid-area:section;
+   
+    
+  }
+  
+  .info1{
+    background-color:#F3EBE5;
+    grid-area:info1;
+    display:flex;
+    border: 2px solid #8D2143;
+  }
+  
+  .info2{
+    background-color:#F3EBE5;
+    grid-area:info2;
+    display:flex;
+    border: 2px solid #8D2143;
+  }
+  
+  

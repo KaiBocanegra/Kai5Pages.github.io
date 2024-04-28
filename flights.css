@@ -1,0 +1,102 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:roboto;
+    line-height: 1.5em;
+  }
+  
+  #site_wrap{
+    background-color:white;
+    height:100vh;
+    display:grid;
+    grid-template-columns:
+      1fr 
+      repeat(4,minmax(0,268px))
+      1fr
+      ;
+    grid-gap:5px;
+    grid-template-rows:
+      83px
+      83px
+      324px
+      83px;
+    
+    grid-template-areas:
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      "tables tables tables tables tables tables "
+      "section section section section section section"
+      
+      
+  }
+  
+  .header{
+    background-color:#F3EBE5;
+    grid-area:header;
+    align-items:center;
+    display:flex;
+    padding-left: 145px;
+    font-size: 27px;
+    font-weight: bold;
+    
+  }
+  
+  .nav {
+    background-color: white;
+    grid-area: nav;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    list-style:none;
+  }
+  .nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size:16px;
+    padding: 110px;
+  }
+  
+  .search-bar {
+    padding: 0;
+    margin-left: 200px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 358px;
+    height:20px;
+    padding: 5px;
+    border-radius: 12px; 
+  }
+  
+  .tables{
+    grid-area:tables;
+  }
+  .tables table {
+    border: 2px solid black; /* Adjust the width and color as needed */
+    width: 100%;
+    background-color: #DBF3ED; /* Background color code */
+  }
+  
+  .tables table td,
+  .tables table th {
+    border: 1px solid black; /* Adjust the width and color as needed */
+    height: 70px;
+  }
+  
+  .flights{
+    background-color:white;
+    grid-area:flights;
+    display:flex;
+  }
+  
+  .section{
+    background-color:white;
+    grid-area:section;
+   
+    
+  }
+  
+  
+  
+  
